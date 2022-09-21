@@ -19,7 +19,8 @@ const makeImage = image => {
   return `<li>
   <img src = '${image.url}'
   alt = '${image.alt}'
-  width = "640"
+  width = "340"
+  height = '227'
   class = "list"/>
   </li>`;
 };
@@ -28,4 +29,4 @@ const makePicture = images.map(makeImage).join("");
 console.log(makePicture);
 
 const listEl = document.querySelector(".gallery");
-listEl.insertAdjacentHTML("beforebegin", makePicture);
+listEl.insertAdjacentHTML("beforeend", makePicture);

@@ -5,4 +5,7 @@ nameInput.addEventListener("input", onChangeTextTitleArea);
 
 function onChangeTextTitleArea(event) {
   nameOutput.textContent = event.currentTarget.value;
+  if (event.currentTarget.value === "") {
+    nameOutput.textContent = "Anonymous";
+  }
 }

@@ -1,0 +1,8 @@
+.list {
+  border-radius: 10px;
+}
+.gallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 360px 360px 360px;
+}
