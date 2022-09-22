@@ -6,7 +6,6 @@ const valueDataLength = textInputArea.getAttribute(["data-length"]);
 input.addEventListener("blur", checkCorrectFill);
 
 function checkCorrectFill(e) {
-  console.log(e.currentTarget);
   if (Number(valueDataLength) === e.currentTarget.value.length) {
     changeClass("valid", "invalid");
   } else {
